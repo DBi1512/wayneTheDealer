@@ -71,7 +71,7 @@
       </header>
 
       <!-- DISCOUNT CAMPAIGN -->
-      <section id="discountCampaign">
+      <section id="discountCampaign" data-type="background" data-speed="5">
          <article>
             <div class="container clearfix">
                <div class="row">
@@ -82,7 +82,7 @@
 
                   <div class="col-sm-7 discount-text">
                      <h1>Discount Campaign</h1>
-                     <p class="lead">Buy 2 bottles get 1 FREE of the same kind</p>
+                     <p class="lead">Buy <strong>2 bottles get 1 FREE</strong> of the same kind</p>
                      <div id="price-timeline">
                         <div class="price">
                            <h4>Cordyceps Gold <br /><small>2 + 1 FREE</small></h4>
@@ -95,7 +95,8 @@
                            <span>$120</span>
                         </div>
                         <div class="price">
-                           <h4>Omega-3 <br /><small>2 + 1 FREE</small></h4>
+                           <h4>Omega-3 <br />
+                              <small>2 + 1 FREE</small></h4>
 
                            <span>$40</span>
                         </div>
@@ -107,6 +108,23 @@
          </article>
       </section><!-- Discount Campaign -->
 
+      <!-- OPT IN SECTION -->
+      <section id="optin">
+         <div class="container">
+            <div class="row">
+
+               <div class="col-sm-8">
+                  <p class="lead"><strong>Subscribe to our mailing list.</strong> We'll send something special as a thank you.</p>
+               </div><!-- col -->
+
+               <div class="col-sm-4">
+                  <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">Click here to subscribe</button>
+               </div><!-- col -->
+
+            </div><!-- row -->
+         </div><!-- container -->
+      </section>
+
       <!-- PRODUCT -->
       <section id="allProducts">
          <div class="container clearfix">
@@ -115,27 +133,26 @@
                   <img src="assets/img/Cordyceps1.jpg" alt="Cordyceps" class="product productCordyceps"/>
                   <h1>Cordyceps Gold</h1>
                   <p>Cordyceps are a type of fungus, better known as a species of edible medicinal, nutritionally beneficial mushrooms ...</p>
-                  <p><a class="btn btn-lg" href="/" role="button">Read more ...</a></p>
+                  <p><a href="/" role="button">Read more ...</a></p>
                </div><!-- col -->
 
                <div class="col-sm-4">
                   <img src="assets/img/RedCorshiPlus1.jpg" alt="Red Corshi Plus" class="product productRedCorshiPlus"/>
                   <h1>Red Corshi Plus</h1>
                   <p>Cordyceps and reishi are types of fungi historically used as natural medicines in China, Japan, Korea and USA ...</p>
-                  <p><a class="btn btn-lg" href="/" role="button">Read more ...</a></p>
+                  <p><a href="/" role="button">Read more ...</a></p>
                </div><!-- col -->
 
                <div class="col-sm-4">
                   <img src="assets/img/Omega1.jpg" alt="Omega" class="product productOmega"/>
                   <h1>Omega-3</h1>
                   <p>Omega-3 has the conditions affecting the circulatory system, decreases depression, improves eye visions ...</p>
-                  <p><a class="btn btn-lg" href="/" role="button">Read more ...</a></p>
+                  <p><a href="/" role="button">Read more ...</a></p>
                </div><!-- col -->
 
             </div><!-- row -->
          </div><!-- container -->
       </section><!-- PRODUCT -->
-
 
       <!-- PRODUCT 1 -->
       <section>
@@ -153,9 +170,38 @@
       </section>
 
       <!-- ABOUT US -->
-      <section>
+      <section id="aboutUs">
+         <div class="container">
+            <div class="section-header">
+               <h2>About us</h2>
+            </div><!-- section.header -->
+            <div class="row">
 
-      </section>
+               <div class="col-sm-7">
+
+                  <div class="row">
+                     <div class="col-sm-6 offset-sm-3">
+                        <img src="assets/img/WDLogo.png" alt="Chart"/ class="logo">
+                     </div><!-- mini col -->
+                  </div><!-- mini row -->
+
+                  <div class="row">
+
+                     <div class="col-sm-6 offset-sm-3">
+                        <p>Wayne is a dealer, retailer from Daily Life Inc.</p>
+                     </div><!-- mini col -->
+
+                  </div><!-- mini row -->
+
+               </div><!-- col -->
+
+               <div class="col-sm-5">
+                  <img src="assets/img/Wayne.jpg" alt="Wayne picture" />
+               </div><!-- col -->
+
+            </div><!-- row -->
+         </div><!-- container -->
+      </section><!-- aboutUs -->
 
       <!-- VIDEO -->
       <section>
@@ -173,16 +219,49 @@
       </section>
 
       <!-- MODAL -->
-      <section>
+      <div class="modal fade" id="myModal">
+         <div class="modal-dialog">
+            <div class="modal-content">
 
-      </section>
+               <div class="modal-header">
+                  <button type="buttom" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i> Subscribe to our mailing list</h4>
+               </div><!-- modal-header -->
+
+               <div class="modal-body">
+                  <p>Simply enter your name and email! As a thank you for joining us, we're going to give you some <em>discount / free shipping!</em></p>
+                  <form class="form-inline" role="form">
+                     <div class="form-group">
+                        <label class="sr-only" for="subscribe-name">Your first name</label>
+                        <input type="text" class="form-control" id="subscribe-name" placeholder="Your first name"/>
+                     </div><!-- form-group -->
+                     <div class="form-group">
+                        <label class="sr-only" for="subscribe-email">and your email</label>
+                        <input type="text" class="form-control" id="subscribe-email" placeholder="and your email"/>
+                     </div><!-- form-group -->
+
+                     <input type="submit" class="btn btn-danger" value="Subscribe"/>
+                  </form>
+
+                  <hr />
+
+                  <p><small>By providing your email you consent to receiving occasionally promotional emails &amp; newsletters. <br />No spam. Just good stuff. We respect your privacy &amp; you may unsubscribe at any time</small></p>
+               </div><!-- modal-body -->
+
+            </div><!-- modal-content -->
+         </div><!-- modal-dialog -->
+      </div><!-- modal -->
 
       <!-- BOOTSTRAP CORE JAVASCRIPT
             Placed at the end of the document so the pages load faster -->
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
       <!-- Google - jquery - snippet, jquery.com -->
-      <script src="assets/js/jquery-3.3.1.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <!-- download compressed production jquery -->
+      <script src="assets/js/jquery-3.3.1.min.js"></script>
+
+      <script src="assets/js/bootstrap.min.js"></script>
+
       <script src="assets/js/main.js"></script>
 
    </body>
