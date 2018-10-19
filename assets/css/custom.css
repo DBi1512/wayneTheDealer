@@ -242,11 +242,11 @@ a:hover, a:visited, a:link, a:active
    font-size: 60px;
 }
 
-#discount-title {
+.discount-title {
   color: white;
 }
 
-#discount-title:hover {
+.discount-title:hover {
   color: #6a9b3d;
 }
 
@@ -270,11 +270,11 @@ a:hover, a:visited, a:link, a:active
    display: block;
 }
 
-#product-title {
+.product-title {
   color: black;
 }
 
-#product-title:hover {
+.product-title:hover {
   color: #6a9b3d;
 }
 
