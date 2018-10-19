@@ -12,7 +12,7 @@
       <link rel="icon" href="assets/img/WD.png">
       <!-- icon of the tab -->
 
-      <title>W's the Dealer</title>
+      <title>Wayne's the Dealer</title>
 
       <!-- Bootstrap core CSS -->
       <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
@@ -34,46 +34,53 @@
       <![endif]-->
 
    </head>
+
    <body>
       <!-- HEADER
             link <Bootstrap core CSS> to <head>
              above -->
       <header class="site-header" role="banner">
 
-      <!-- NAVBAR B.4 -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/img/LogoLong.jpg" id="logoSmall" alt="W's the Dealer"/></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
+      <!-- NAVBAR -->
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+         <div class="navbar-wrapper">
 
-               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                  <li class="nav-item active">
-                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Products</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">About us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Contact</a>
-                  </li>
-               </ul>
-            </div><!-- collapse -->
-         </div><!-- container -->
+         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="assets/img/LogoLong.jpg" alt="Wayne's The Dealer Logo" id="logoSmall"></a>
+               </div>
+               <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                     <li class="active"><a href="index.html">Home</a></li>
+                     <li><a href="products.html">Products</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+                     <li class="dropdown">
+                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Information <span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="blog.html">Blog</a></li>
+                         <li><a href="resources.html">Resources</a></li>
+                         <li role="separator" class="divider"></li>
+                         <li><a href="aboutus.html">About us</a></li>
+                      </ul>
+                   </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
 
-      </nav>
-
+      </div>
 
       </header>
 
       <!-- DISCOUNT CAMPAIGN -->
-      <section id="discountCampaign" data-type="background" data-speed="10">
+      <section id="discountCampaign" data-type="background" data-speed="2">
          <article>
             <div class="container clearfix">
                <div class="row">
@@ -87,18 +94,18 @@
                      <h2>Buy <strong>2 bottles get 1 FREE</strong> of the same kind</h2>
                      <div id="price-timeline">
                         <div class="price">
-                           <h4>Cordyceps Gold <br /><small>2 + 1 FREE</small></h4>
+                           <h3><a href="cordycepsgold.html" id="discount-title">Cordyceps Gold</a> <br /><small>2 + 1 FREE</small></h3>
 
                            <span>$90</span>
                         </div>
                         <div class="price">
-                           <h4>Red Corshi Plus <br /><small>2 + 1 FREE</small></h4>
+                           <h3><a href="redcorshiplus.html" id="discount-title">Red Corshi Plus <br /><small>2 + 1 FREE</small></h3>
 
                            <span>$120</span>
                         </div>
                         <div class="price">
-                           <h4>Omega-3 <br />
-                              <small>2 + 1 FREE</small></h4>
+                           <h3><a href="omega.html" id="discount-title">Omega-3 <br />
+                              <small>2 + 1 FREE</small></h3>
 
                            <span>$40</span>
                         </div>
@@ -116,7 +123,7 @@
             <div class="row">
 
                <div class="col-sm-8">
-                  <p class="lead"><strong>Subscribe to our mailing list.</strong> We'll send something special as a thank you.</p>
+                  <p><strong>Subscribe to our mailing list.</strong> We'll send something special as a thank you.</p>
                </div><!-- col -->
 
                <div class="col-sm-4">
@@ -166,24 +173,24 @@
          <div class="container clearfix">
             <div class="row">
                <div class="col-sm-4">
-                  <img src="assets/img/Cordyceps1.jpg" alt="Cordyceps" class="product productCordyceps"/>
-                  <h2>Cordyceps Gold</h2>
+                  <a href="cordycepsgold.html"><img src="assets/img/Cordyceps1.jpg" alt="Cordyceps" class="product product-photo"/></a>
+                  <a href="cordycepsgold.html"><h2 id="product-title">Cordyceps Gold</h2></a>
                   <p>Cordyceps are a type of fungus, better known as a species of edible medicinal, nutritionally beneficial mushrooms ...</p>
-                  <p><a href="/" role="button">Read more ...</a></p>
+                  <p><a href="/" role="button"><em>Read more ...</em></a></p>
                </div><!-- col -->
 
                <div class="col-sm-4">
-                  <img src="assets/img/RedCorshiPlus1.jpg" alt="Red Corshi Plus" class="product productRedCorshiPlus"/>
-                  <h2>Red Corshi Plus</h2>
+                  <a href="redcorshiplus.html"><img src="assets/img/RedCorshiPlus1.jpg" alt="Red Corshi Plus" class="product product-photo"/></a>
+                  <a href="redcorshiplus.html"><h2 id="product-title">Red Corshi Plus</h2></a>
                   <p>Cordyceps and reishi are types of fungi historically used as natural medicines in China, Japan, Korea and USA ...</p>
-                  <p><a href="/" role="button">Read more ...</a></p>
+                  <p><a href="/" role="button"><em>Read more ...</em></a></p>
                </div><!-- col -->
 
                <div class="col-sm-4">
-                  <img src="assets/img/Omega1.jpg" alt="Omega" class="product productOmega"/>
-                  <h2>Omega-3</h2>
+                  <a href="omega.html"><img src="assets/img/Omega1.jpg" alt="Omega" class="product product-photo"/></a>
+                  <a href="omega.html"><h2 id="product-title">Omega-3</h2></a>
                   <p>Omega-3 has the conditions affecting the circulatory system, decreases depression, improves eye visions ...</p>
-                  <p><a href="/" role="button">Read more ...</a></p>
+                  <p><a href="/" role="button"><em>Read more ...</em></a></p>
                </div><!-- col -->
 
             </div><!-- row -->
@@ -195,16 +202,11 @@
 
       </section>
 
-      <!-- PRODUCT 2 -->
-      <section>
-
-      </section>
-
       <!-- VIDEO -->
-      <section id="video" data-type="background" data-speed="10">
+      <section id="video" data-type="background" data-speed="2">
          <div class="container">
             <div class="row">
-               <div class="col-sm-8 offset-sm-2">
+               <div class="col-sm-8 col-sm-offset-2">
                   <h2>Video</h2>
                   <iframe width="100%" height="415" src="https://www.youtube.com/embed/0Q2ATY_zmNo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                </div><!-- col -->
@@ -220,18 +222,12 @@
             </div><!-- section.header -->
             <div class="row">
 
-               <div class="col-sm-7 col-md-6">
-
-                  <div class="row">
-                     <div class="col-sm-8 offset-sm-2">
-                        <img src="assets/img/LogoLongWhite.jpg" alt="Chart"/ class="logo">
-                     </div><!-- mini col -->
-                  </div><!-- mini row -->
+               <div class="col-sm-8 col-md-4 col-lg-6">
 
                   <div class="row">
 
                      <div class="col-lg-8">
-                        <h2>Your Dealer <small>Hoang Phan</small></h2>
+                        <h3>The Dealer <small>Hoang Phan</small></h3>
                      </div><!-- mini col -->
 
                      <div class="col-lg-4">
@@ -240,22 +236,84 @@
 
                   </div><!-- mini row -->
 
-                  <p class="lead">Wayne is a dealer, retailer from Daily Life Inc.</p>
+                  <p class="lead">Wayne (Hoang Phan) is a dealer, retailer from Daily Life Inc.</p>
+
+                  <hr />
+
+                  <p>
+                     One of the best ways to have a healthy lifestyle and maintain a good weight is to eat food which sustains your energy levels throughout the day. The following list gives you 12 common foods which have been chosen for their ability to provide the body with energy. Some of the foods provide slow-releasing energy from healthy carbohydrates, which are the body’s main energy source. Others contain a range of important vitamins and minerals involved in cellular energy production processes in the body. Good quality protein sources are also included as these are needed for maintaining body tissues, including muscle.
+                  </p>
 
                </div><!-- col -->
 
-               <div class="col-sm-5 col-md-6">
-                  <img src="assets/img/Wayne.jpg" alt="Wayne picture" />
-               </div><!-- col -->
+
 
             </div><!-- row -->
          </div><!-- container -->
       </section><!-- aboutUs -->
 
-      <!-- VIDEO -->
-      <section>
+      <!-- TESTIMONIALS -->
+      <section id="review">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-8 col-sm-offset-2">
+                  <h2>What People Are Saying About The Products</h2>
 
-      </section>
+                  <!-- TESTIMONIALS -->
+                  <div class="row testimonial">
+                     <div class="col-sm-4">
+                        <img src="assets/img/brennan.jpg" alt="Brennan" />
+                     </div><!-- mini col -->
+                     <div class="col-sm-8">
+                        <blockquote>
+                           These videos are well created, concise, fast-paced, easy to follow, and just funny enough to keep you chuckling as you're slamming out lines of code. I've taken 3 courses from this instructor. Whenever I have questions he is right there with a simple solution or a helpful suggestion to keep me going forward with the course work.
+                           <cite>&mdash; Brennan, graduate of all of Brad's courses</cite>
+                        </blockquote>
+                     </div><!-- mini col -->
+                  </div><!-- mino row testimonial-->
+
+                  <!-- TESTIMONIALS -->
+                  <div class="row testimonial">
+                     <div class="col-sm-4">
+                        <img src="assets/img/ben.png" alt="A Man" />
+                     </div><!-- mini col -->
+                     <div class="col-sm-8">
+                        <blockquote>
+                           These videos are well created, concise, fast-paced, easy to follow, and just funny enough to keep you chuckling as you're slamming out lines of code.
+                           <cite>&mdash; Brennan, graduate of all of Brad's courses</cite>
+                        </blockquote>
+                     </div><!-- mini col -->
+                  </div><!-- mino row testimonial-->
+
+                  <!-- TESTIMONIALS -->
+                  <div class="row testimonial">
+                     <div class="col-sm-4">
+                        <img src="assets/img/aj.png" alt="Another Man" />
+                     </div><!-- mini col -->
+                     <div class="col-sm-8">
+                        <blockquote>
+                           These videos are well created, concise, fast-paced, easy to follow, and just funny enough to keep you chuckling as you're slamming out lines of code.
+                           <cite>&mdash; Brennan, graduate of all of Brad's courses</cite>
+                        </blockquote>
+                     </div><!-- mini col -->
+                  </div><!-- mino row testimonial-->
+
+                  <!-- TESTIMONIALS -->
+                  <div class="row testimonial">
+                     <div class="col-sm-4">
+                        <img src="assets/img/ernest.png" alt="Last Man" />
+                     </div><!-- mini col -->
+                     <div class="col-sm-8">
+                        <blockquote>
+                           These videos are well created, concise, fast-paced, easy to follow, and just funny enough to keep you chuckling as you're slamming out lines of code.
+                           <cite>&mdash; Brennan, graduate of all of Brad's courses</cite>
+                        </blockquote>
+                     </div><!-- mini col -->
+                  </div><!-- mino row testimonial-->
+               </div><!-- col -->
+            </div><!-- row -->
+         </div><!-- container -->
+      </section><!-- review -->
 
       <!-- CONTACT -->
       <section>
@@ -263,9 +321,28 @@
       </section>
 
       <!-- FOOTER -->
-      <section>
-
-      </section>
+      <footer>
+         <div class="container">
+            <div class="col-sm-3" id="footerLogo">
+               <p><a href="index.html"><img src="assets/img/LogoLong.jpg" alt="Wayne's The Dealer" id="logoSmall"></a></p>
+            </div><!-- col -->
+            <div class="col-sm-6">
+               <nav>
+                  <ul class="list-unstyled list-inline">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="products.html">Products</a></li>
+                     <li><a href="contact.html">Contact</a></li>
+                     <li><a href="blog.html">Blog</a></li>
+                     <li><a href="resources.html">Resources</a></li>
+                     <li><a href="aboutus.html">About Us</a></li>
+                  </ul>
+               </nav>
+            </div><!-- col -->
+            <div class="col-sm-3">
+               <p class="pull-right"><strong>&copy; 2018 Wayne</strong> Hoang Phan</p>
+            </div><!-- col -->
+         </div><!-- container -->
+      </footer>
 
 
 
